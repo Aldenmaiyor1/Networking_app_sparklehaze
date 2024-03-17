@@ -25,4 +25,9 @@ router.get("/api/answers/:id", async(req,res) => {
   res.send(answersList)
 })
 
+router.post("/api/newQuestion", async (req,res) => {
+    const newQuestion = req.body
+    console.log(newQuestion)
+})
+
 export default router;
